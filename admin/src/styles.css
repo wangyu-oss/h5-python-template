@@ -1,0 +1,51 @@
+html, body, #app { margin: 0; height: 100%; overflow: hidden; }
+body {
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f4f7fb;
+  color: #0f172a;
+}
+.page {
+  margin: 16px;
+  padding: 20px 22px 24px;
+  height: calc(100vh - 96px);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e8edf5;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+.page > .el-table {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+.toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; flex: none; }
+.pager { flex: none; margin-top: 12px; justify-content: flex-end; }
+.el-table { --el-table-header-bg-color: #f8fafc; border-radius: 12px; }
+.el-dialog {
+  border-radius: 16px;
+  overflow: hidden;
+  max-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+.el-dialog__header { margin: 0; padding: 16px 20px; border-bottom: 1px solid #e8edf5; }
+.el-dialog__body { overflow: auto; max-height: 70vh; padding: 20px; }
+.el-dialog__footer { border-top: 1px solid #e8edf5; padding: 12px 20px; }
+.menu-scroll,
+.el-dialog__body,
+.el-table__body-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+.menu-scroll::-webkit-scrollbar,
+.el-dialog__body::-webkit-scrollbar,
+.el-table__body-wrapper::-webkit-scrollbar { width: 8px; height: 8px; }
+.menu-scroll::-webkit-scrollbar-thumb,
+.el-dialog__body::-webkit-scrollbar-thumb,
+.el-table__body-wrapper::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+html.dark body { background: #0b1220; color: #e5e7eb; }
+html.dark .page, html.dark .header { background: #111827; color: #e5e7eb; border-color: #1f2937; }

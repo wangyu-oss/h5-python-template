@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "lint": "npm --prefix h5 run lint && npm --prefix admin run lint"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}

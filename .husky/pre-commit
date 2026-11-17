@@ -1,0 +1,2 @@
+npm --prefix h5 run lint
+npm --prefix admin run lint
